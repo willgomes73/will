@@ -1,21 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
 :root{
     --cor0:#F0B5A1;
-    --cor1:#BD8E7E;
+    --cor1:#b49c94;
     --cor2:#703B2A;
     --cor4:#F2805A;
     --cor5:#70544B;
-    --cor6:#2E3142;
-    --font-padrao:Arial, Verdana, Helvetica, Sans-serif;    
+    --cor6:#3c3cff;
+
+    --font-padrao:Arial, Verdana, Helvetica, Sans-serif;   
+    --font--titulo:'Mochiy Pop P One', sans-serif;
 }
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
-    background-color: #F0E1DF;
+    background: var(--cor6);
     font-family: var(--fonte-padrao);
 }
 header{
@@ -24,26 +27,33 @@ header{
     text-align: center;
     padding-top:  20px; 
 }
+header > picture > img{
+    left: 1%;
+    top: 2%;
+    margin: auto;
+    position: absolute;
+}
  picture{
     margin-top: 10px;
 }
 header > h1{
     color: black;
-    font-family: var(--font-destaque);
+    font-family: var(--font--titulo);
     font-size: 3em;
     font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px hsla(0, 0%, 0%, 0.502);
+    position: relative;
     
 }
 nav{
-    background-color: var(--cor2);
+    background-color: #FFFFFF;
     padding: 10px;
     text-align: left;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
 }
 nav > a{
-    color: white;
+    color: black;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -56,10 +66,11 @@ nav > a:hover{
     color: white;
 }
 main{
-    background-image: linear-gradient(to bottom,var(--cor1),white);
+    background: #FFFFFF;
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
+    margin-top: 20px;
     padding: 20px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
@@ -67,18 +78,32 @@ main{
     border-bottom-right-radius: 10px;
 }
 main > h1{
-    color: white;
+    color: black;
 }
 div{
     width: 286px;
     height: 199px;
+    margin-left: 20px;
+    display: inline-block;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px hsla(0, 0%, 0%, 0.39);
 }
-aside{
+div.video3{
+   left: 714px;
+}
+div.video2{
+    left: 400px;
+ }
+div.video > iframe{
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
 
+aside{
     width: 300px;
     height: 240px;
     background-color: white;
@@ -98,4 +123,20 @@ aside > h3{
 aside > p{
     text-indent: 10px;
     margin-top: 5px;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1)
 }
