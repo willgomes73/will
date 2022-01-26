@@ -19,7 +19,7 @@ body{
     font-family: var(--fonte-padrao);
 }
 header{
-    background-color: var(--cor0);
+    background-color: #FFFFFF;
     min-height: 81px ;
     text-align: center;
     padding-top:  20px; 
@@ -28,7 +28,7 @@ header{
     margin-top: 10px;
 }
 header > h1{
-    color: white;
+    color: black;
     font-family: var(--font-destaque);
     font-size: 3em;
     font-weight: normal;
