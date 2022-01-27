@@ -1,17 +1,21 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
 :root{
-    --cor0:#F0B5A1;
-    --cor1:#b49c94;
-    --cor2:#703B2A;
-    --cor4:#F2805A;
-    --cor5:#70544B;
+    --cor0:#5F2CE8;
+    --cor2:#b49c94;
+    --cor1:#309DFF;
+    --cor4:#2C5EE8;
+    --cor5:#808080;
     --cor6:#3c3cff;
 
     --font-padrao:Arial, Verdana, Helvetica, Sans-serif;   
     --font--titulo:'Mochiy Pop P One', sans-serif;
+    --font-robo:'Roboto', sans-serif;
+    --font-robo2:'Mochiy Pop P One', sans-serif;
 }
 *{
     margin: 0px;
@@ -77,9 +81,14 @@ main{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-main > h1{
+main h1{
     color: black;
+    font-family: var(--font-robo2);
+    font-weight: normal;
+    font-size: 1.8em;
+    padding: 10px;
 }
+
 div{
     width: 286px;
     height: 199px;
@@ -106,6 +115,7 @@ div.video > iframe{
 aside{
     width: 300px;
     height: 240px;
+    margin-top: 20px;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -121,22 +131,30 @@ aside > h3{
     border-radius: 10px 10px 0px 0px ;
 }
 aside > p{
+    margin: 15px 0px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1em;
     text-indent: 10px;
     margin-top: 5px;
 }
 footer{
-    background-color: var(--cor5);
+    background-color: white;
     color: white;
+
     text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
+    font-size: 23px;
+    padding: 10px;
 }
 footer a{
-    color: white;
+    color: var(--cor4);
     font-weight: bolder;
     text-decoration: none;
 }
 footer a:hover{
     text-decoration: underline;
     color: var(--cor1)
+}
+footer img a{
+    padding-left: 50px;
 }
